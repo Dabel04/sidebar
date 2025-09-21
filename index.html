@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-column flex-md-row">
+            <!-- Sidebar -->
+            <div class="col-12 col-md-2 sidebar d-flex flex-column order-2 order-md-1">
+                <h4 class="mb-4 menu-label">finance</h4>
+                <nav class="nav flex-column sidebar-menu">
+                    <a class="nav-link active" href="#"><i class="fas fa-home"></i> <span>Overview</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-exchange-alt"></i> <span>Transactions</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-chart-pie"></i> <span>Budgets</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-file-invoice-dollar"></i> <span>Pots</span></a>
+                    <a class="nav-link" href="#"><i class="fas fa-piggy-bank"></i> <span>Recurring Bills</span></a>
+                </nav>
+                <div class="mt-auto">
+                    <a href="#" class="nav-link text-secondary menu-label">Minimize Menu</a>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col-12 col-md-10 p-4 order-1 order-md-2">
+                <h4>Overview</h4>
+                <div class="row flex-column flex-md-row g-3 mt-3">
+                    <!-- Current Balance -->
+                    <div class="col-md-4">
+                        <div class="card-custom text-white bg-dark">
+                            <p class="mb-1">Current Balance</p>
+                            <h3>$4,836.00</h3>
+                        </div>
+                    </div>
+                    <!-- Income -->
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <p class="mb-1">Income</p>
+                            <h3>$3,814.25</h3>
+                        </div>
+                    </div>
+                    <!-- Expenses -->
+                    <div class="col-md-4">
+                        <div class="card-custom">
+                            <p class="mb-1">Expenses</p>
+                            <h3>$1,700.50</h3>
+                        </div>
+                    </div>
+                    <!-- Pots Card -->
+                    <div class="col-md-7">
+                        <div class="card-custom shadow-sm border-0 p-4 rounded">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="fw-bold mb-0">Pots</h5>
+                                <a href="#" class="text-muted small text-decoration-none">See Details </a>
+                            </div>
+                            <div class="d-flex pots">
+                                <div class="bg-light p-5 rounded text-center">
+                                    <h1 class="fw-bold mb-0">$850</h1>
+                                    <small class="text-muted">Total Saved</small>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="mx-5">
+                                        <div class="line bg-teal">
+                                            <h6>savings</h6>
+                                            <p>$159</p>
+                                        </div>
+
+                                        <div class="line bg-cyan mt-3">
+                                            <h6>Concert ticket</h6>
+                                            <p>$110</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="line bg-peach">
+                                            <h6>Gift</h6>
+                                            <p>$40</p>
+                                        </div>
+
+                                        <div class="line bg-purple mt-3">
+                                            <h6>New Laptop</h6>
+                                            <p>$10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Transactions -->
+                            <div class="card-custom mt-3">
+                                <h5 class="fw-bold mb-4">Transactions</h5>
+                                <div class="transactions d-flex align-items-center justify-content-between mb-5">
+                                    <div class="d-flex align-items-center">
+                                    <img src="img/laptop1.jpg" alt="">
+                                    <span>Emma Richardson</span>
+                                    </div>
+                                    <span class="text-success">+ $75.50</span>
+                                </div>
+                                <div class="transactions d-flex align-items-center justify-content-between mb-5">
+                                    <div class="d-flex align-items-center">
+                                    <img src="img/laptop2.jpg" alt="">
+                                    <span>Savory Bites Bistro</span>
+                                    </div>
+                                    <span class="text-dark">- $55.50</span>
+                                </div>
+                                <div class="transactions d-flex align-items-center justify-content-between mb-5">
+                                    <div class="d-flex align-items-center">
+                                    <img src="img/laptop3.jpg" alt="">
+                                    <span>Daniel Carter</span>
+                                    </div>
+                                    <span class="text-dark">- $42.30</span>
+                                </div>
+                                <div class="transactions d-flex align-items-center justify-content-between mb-5">
+                                    <div class="d-flex align-items-center">
+                                    <img src="img/laptop4.jpg" alt="">
+                                    <span>Sun Park</span>
+                                    </div>
+                                    <span class="text-success">+ $120.00</span>
+                                </div>
+                                <div class="transactions d-flex align-items-center justify-content-between mb-5">
+                                    <div class="d-flex align-items-center">
+                                    <img src="img/web5.jpg" alt="">
+                                    <span>Urban Services Hub</span>
+                                    </div>
+                                    <span class="text-dark">- $65.00</span>
+                                </div>
+                            </div>
+                        
+                        </div>  
+                       <!-- Budgets Card -->
+                    <div class="col-md-5">
+                        <div class="card-custom shadow-sm border-0 p-4 pots">
+                            <div class="d-flex justify-content-between align-items-center mb-3 pots2">
+                                <h5 class="fw-bold mb-0">Budgets</h5>
+                                <a href="#" class="text-muted small text-decoration-none">See Details</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="donut me-4">
+                                    <span class="donut-text">$338<br><small class="text-muted">of $975 limit</small></span>
+                                </div>
+                                <ul class="list-unstyled m-0 flex-grow-1">
+                                    <li class="mb-2"><span class=" bg-teal"></span> Entertainment <p class="mx-3">$50.00</p></li>
+                                    <li class="mb-2"><span class=" bg-cyan"></span> Bills <p class="mx-3">$750.00</p></li>
+                                    <li class="mb-2"><span class=" bg-peach"></span> Dining Out <p class="mx-3">$75.00</p></li>
+                                    <li><span class="dot bg-purple"></span> Personal Care <p class="mx-3">$100.00</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                            <!-- recurring card -->
+                        <div class="card-custom mt-3">
+                            <p>Recurring Bills</p>
+                            <div class="d-flex justify-content-between bg-ash bg-opacity-10 border-4 border-start border-info rounded-2 px-3 py-3 mb-4">
+                                <span>Paid Bills</span>
+                                <strong>$190.00</strong>
+                            </div>
+                            <div class="d-flex justify-content-between bg-ash bg-opacity-10 border-4 border-start border-warning rounded-2 px-3 py-3 mb-4">
+                                <span>Total Upcoming</span>
+                                <strong>$194.98</strong>
+                            </div>
+                            <div class="d-flex justify-content-between bg-ash bg-opacity-10 border-4 border-start border-primary rounded-2 px-3 py-3 mb-4">
+                                <span>Due Soon</span>
+                                <strong>$59.98</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End main -->
+        </div>
+    </div>
+</body>
+</html>
